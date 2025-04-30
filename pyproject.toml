@@ -12,7 +12,7 @@ dependencies = [
     "attrs==24.2.0",
     "certifi==2024.8.30",
     "deprecated==1.2.15",
-    "h11==0.14.0",
+    "h11==0.16.0",
     "idna==3.10",
     "img2pdf==0.5.1",
     "lxml==5.3.0",
