@@ -1,5 +1,7 @@
 # 📄 PDF Exporter from Authenticated OneDrive Sessions
 
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+
 This project allows you to export PDFs, even those that are protected, from authenticated OneDrive sessions using Selenium. The tool automates the browser process to capture screenshots of each page and combine them into a PDF file. Works also on OneDrive for Business.
 
 > [!WARNING]
@@ -21,12 +23,16 @@ This project allows you to export PDFs, even those that are protected, from auth
     - [📝 Steps to Calibrate:](#-steps-to-calibrate)
   - [🤝 Contributing](#-contributing)
 
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+
 ## ✨ Features
 - Supports both Firefox and Chrome browsers.
 - Ability to export protected PDFs from authenticated web sessions.
 - Can optionally keep or delete temporary images used for PDF creation.
 - Compatible with browser profiles to retain session data (useful for skipping the login).
 - Support for Raw lossless PDFs
+
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
 ## 👀 Preview
 
@@ -52,6 +58,7 @@ INFO - Temporary images removed.
 INFO - Browser session ended.
 ```
 
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
 ## 📋 Requirements
 
@@ -69,6 +76,8 @@ To interact with your browser via Selenium, you need the appropriate driver for 
 
 Ensure the drivers are in your system’s `PATH` or specify their location explicitly when launching the browser.
 
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+
 ## ⚙️ Installation and Setup
 
 1. Install via `pip`:
@@ -84,6 +93,8 @@ Ensure the drivers are in your system’s `PATH` or specify their location expli
         - Use the `-p` option to specify the path to the Firefox profile directory.
     - **Chrome:**
         - Specify the Chrome user data directory and profile name using `-p` and `-n` options. You can find this in `chrome://version/`.
+
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
 ## 🚀 Usage
 
@@ -135,6 +146,8 @@ To use the `--cache-dir` option, you need to find the cache directory of your br
     
     Basically, `{profile_path}/cache2/entries`.
 
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+
 ## 🛠️ Calibrating the Tool
 
 If the tool is not working correctly, you may need to update the class names and ARIA labels used to identify elements on the OneDrive page. These values are defined in the [browser/constants.py](src/onedrive_pdf_downloader/browser/constants.py#L6) file.
@@ -160,10 +173,10 @@ If the tool is not working correctly, you may need to update the class names and
 
 By following these steps, you can calibrate the tool to work with any changes in the OneDrive page structure.
 
+![separator](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
 ## 🤝 Contributing
 
 We welcome contributions to improve this tool. If you have found new class names or ARIA labels, please consider submitting a pull request to update the configuration.
 
 For more details, see the [CONTRIBUTING.md](/CONTRIBUTING.md) file.
-

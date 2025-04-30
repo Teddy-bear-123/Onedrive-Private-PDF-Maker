@@ -1,3 +1,10 @@
+# [1.2.0-dev.1](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/compare/v1.1.1...v1.2.0-dev.1) (2025-04-30)
+
+
+### Features
+
+* bump dependencies ([8743e26](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/commit/8743e26c18d56930653092bf765fe7775bfbe94c))
+
 ## [1.1.1](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/compare/v1.1.0...v1.1.1) (2025-04-30)
 
 
