@@ -46,19 +46,28 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+            - name: Check if new version exists
+              if: env.NEXT_RELEASE_VERSION == ''
+              run: echo "No new release version determined by semantic-release. Skipping release steps."
+
             - name: Set version
-              run: uvx --from=toml-cli toml set --toml-path=pyproject.toml project.version ${{env.NEXT_RELEASE_VERSION}}
+              if: env.NEXT_RELEASE_VERSION != ''
+              run: uv version ${{env.NEXT_RELEASE_VERSION}}
 
             - name: Install the project
+              if: env.NEXT_RELEASE_VERSION != ''
               run: uv sync
 
             - name: Build the project
+              if: env.NEXT_RELEASE_VERSION != ''
               run: uv build
 
             - name: Release
+              if: env.NEXT_RELEASE_VERSION != ''
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: npm exec semantic-release
 
             - name: Publish to PyPI
+              if: env.NEXT_RELEASE_VERSION != ''
               run: uv publish --trusted-publishing always
