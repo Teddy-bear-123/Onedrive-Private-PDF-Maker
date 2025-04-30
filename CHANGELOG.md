@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/compare/v1.1.0...v1.1.1) (2025-04-30)
+
+
+### Bug Fixes
+
+* add checks for new release version in release workflow ([6779422](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/commit/67794227bf5dd2c690676f0a07b7fb2cafb231ef))
+
 ## [1.1.1-dev.1](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/compare/v1.1.0...v1.1.1-dev.1) (2025-04-30)
 
 
