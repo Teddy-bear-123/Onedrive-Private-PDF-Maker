@@ -52,7 +52,7 @@ jobs:
 
             - name: Set version
               if: env.NEXT_RELEASE_VERSION != ''
-              run: uvx --from=toml-cli toml set --toml-path=pyproject.toml project.version ${{env.NEXT_RELEASE_VERSION}}
+              run: uv version ${{env.NEXT_RELEASE_VERSION}}
 
             - name: Install the project
               if: env.NEXT_RELEASE_VERSION != ''
