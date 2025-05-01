@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/compare/v1.2.0...v1.3.0) (2025-05-01)
+
+
+### Features
+
+* add GitHub Actions to Dependabot configuration ([69eee17](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/commit/69eee171d63e5aab94e24795399bcb6c4b42ee42))
+
 # [1.3.0-dev.1](https://github.com/Flying-Bunny-Devs/Onedrive-Private-PDF-Downloader/compare/v1.2.0...v1.3.0-dev.1) (2025-05-01)
 
 
