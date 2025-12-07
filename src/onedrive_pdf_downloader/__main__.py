@@ -23,9 +23,7 @@ def main() -> None:
     try:
         # Try to find PDF in cache if requested
         if args.cache_dir and args.browser == "firefox":
-            logging.info(
-                "Checking for cached PDF in directory: %s", args.cache_dir
-            )
+            logging.info("Checking for cached PDF in directory: %s", args.cache_dir)
             if copy_cached_pdf(args):
                 return 0
         # If cache not found or not requested,

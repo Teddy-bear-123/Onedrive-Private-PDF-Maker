@@ -65,6 +65,18 @@ def create_parser() -> argparse.ArgumentParser:
         help="Keep the images after the PDF creation",
         default=False,
     )
+    parser.add_argument(
+        "--create-collage",
+        action="store_true",
+        help="Create a collage of the images after the PDF creation",
+        default=False,
+    )
+    parser.add_argument(
+        "--keep-raw-imgs",
+        action="store_true",
+        help="Keep the raw images before cropping",
+        default=False,
+    )
 
     # Cache options
     parser.add_argument(

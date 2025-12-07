@@ -163,4 +163,7 @@ cython_debug/
 
 *.pdf
 .DS_Store
-*_images/
+# *_images/
+scratch/
+*.priv-urls.toml
+.python-version
